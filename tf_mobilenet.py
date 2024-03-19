@@ -19,7 +19,7 @@ def preprocess_img(img):
 
 
 # Load the trained model
-model = load_model('model.h5')
+model = load_model('model_final.h5')
 
 # Function to perform shape detection
 def detect_shape(frame):
