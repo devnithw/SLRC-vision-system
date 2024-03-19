@@ -28,6 +28,7 @@ def detect_shape(frame):
 
     # Predict the shape
     predictions = model.predict(img)
+    print(predictions)
     shape_index = np.argmax(predictions)
 
     # Define shape labels
@@ -36,6 +37,8 @@ def detect_shape(frame):
     return shape_labels[shape_index]
 
 cap = cv2.VideoCapture(0)
+cap.set(3, 640)
+cap.set(4, 480)
 
 while True:
     # Read a frame from the camera
