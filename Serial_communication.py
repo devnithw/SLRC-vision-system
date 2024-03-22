@@ -1,4 +1,8 @@
+import sys
+sys.path.append('./object_detection')
+
 import serial
+import object_detection.object_function as object_function
 
 # Define serial port and baud rate
 serial_port = 'COM19'  # Replace 'COMX' with your actual port
@@ -15,6 +19,7 @@ def colurdetection():
 def objectdetection():
     # Define objectdetection function implementation
     pass
+
 try:
     while True:
         # Read data from Arduino
@@ -43,7 +48,6 @@ try:
 
 
         # Send command to Arduino
-
 
 except KeyboardInterrupt:
     print("Exiting...")
