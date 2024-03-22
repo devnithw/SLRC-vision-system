@@ -1,23 +1,20 @@
-import sys
-sys.path.append('./object_detection')
-
 import serial
-import object_detection.object_function as object_function
+import object_function
 
 # Define serial port and baud rate
-serial_port = 'COM19'  # Replace 'COMX' with your actual port
+serial_port = '/dev/cu.usbmodem1101'  # Replace 'COMX' with your actual port
 baud_rate = 9600
 
 # Open serial port
 ser = serial.Serial(serial_port, baud_rate)
-colour = "GREEN"
-object_type = "CUBE"
+
+# Return should be of this format
+colour = "green"
+# object_type = "cube"
+
+
 def colurdetection():
     # Define colurdetection function implementation
-    pass
-
-def objectdetection():
-    # Define objectdetection function implementation
     pass
 
 try:
@@ -27,22 +24,21 @@ try:
         received_data=int(received_data)
 
 
-
         # Perform actions based on received data
-        if received_data == 10000:
+        if received_data == 20000:
             #colour = colurdetection()
-            if colour == "GREEN":
+            if colour == "green":
                 command = '2'
             else:
                 command = '3'
             ser.write(command.encode())
 
-        elif received_data == 20000:
+        elif received_data == 10000:
             #colour = colurdetection()
-            if colour == "CUBE":
-                command = '4'
+            if object_function.get_shape() == "cube":
+                command = '2'
             else:
-                command = '5'
+                command = '3'
             ser.write(command.encode())
 
 
