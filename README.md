@@ -10,7 +10,7 @@ The robot includes a Raspberry Pi 4 Model B which runs a tensorflow model to inf
 The code for this technique can be found in `./object-detection` folder
 
 ### Using OpenCV edge detection
-We also tried using OpenCV only to generate contours of the object in the middle. By hard-coding a specific number of contours as the threshold value, we can differentiate between the image of the cube and cylinder. But we found this method is much more prone to errors. However the experimental code can be found in `./opencv-only`.
+We also tried using OpenCV only to detect edges of the object in the center and generate contours. By hard-coding a specific number of contours as the threshold value, we can differentiate between the image of the cube and cylinder by comparing the number of contours generated. But we found this method is much more prone to errors. However the experimental code can be found in `./opencv-only`.
 
 ## Color Detection
 Another task of SLRC 2024 is to identify the color of the wall infront of the line follower. Only two colors, green and blue, are possible. This could have been easily done with a color sensor module for Arduino. But since we have a camera fixed for the previous task, we implemented this functionality aslo from OpenCV. The code is much simpler and involves using two color masks for green and blue. Finally, the program counts the pixel area of green and blue seperately and outputs the color with the greater pixel area. The code for this task can be found in `./color-detection` folder.
