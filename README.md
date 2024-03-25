@@ -1,4 +1,4 @@
-# Machine Vision System for lLine Follower Robot (Sri Lanka Robotics Challenge 2024)
+# Machine Vision System for Line Follower Robot (Sri Lanka Robotics Challenge 2024)
 Computer Vision system for identifying 3D-objects and colors. Made for SLRC 2024. Powered by Tensorflow and OpenCV.
 
 ## Object Detection
