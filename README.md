@@ -1,6 +1,8 @@
 # Machine Vision System for Line Follower Robot (Sri Lanka Robotics Challenge 2024)
 Computer Vision system for identifying 3D-objects and colors. Made for SLRC 2024. Powered by Tensorflow and OpenCV.
 
+[<img src="https://i.ytimg.com/an_webp/JsFgmXSXnWw/mqdefault_6s.webp?du=3000&sqp=CLC8vrAG&rs=AOn4CLDBAqtmarCRgDn4aXXI2aiYCGsVZg" width="50%">](https://youtu.be/JsFgmXSXnWw "SLRC Sparkle Robot")
+
 ## Object Detection
 One of the tasks of SLRC 2024 is for the robot to identify whether the object at the center of a ring is a cube or a cylinder. We tackled this task using computer vision. We experimented with the two approaches mentioned below. 
 
@@ -9,8 +11,12 @@ The robot includes a Raspberry Pi 4 Model B which runs a tensorflow model to inf
 
 The code for this technique can be found in `./object_detection` folder
 
+<img src="./images/action/model.jpg" alt="Inferencing using the MobileNet model" width="500"/>
+
 ### Using OpenCV edge detection
 We also tried using OpenCV only to detect edges of the object in the center and generate contours. By hard-coding a specific number of contours as the threshold value, we can differentiate between the image of the cube and cylinder by comparing the number of contours generated. But we found this method is much more prone to errors. However the experimental code can be found in `./edge_detection`.
+
+<img src="./images/action/edge.jpg" alt="Inferencing using edge detection" width="500"/>
 
 ## Color Detection
 Another task of SLRC 2024 is to identify the color of the wall infront of the line follower. Only two colors, green and blue, are possible. This could have been easily done with a color sensor module for Arduino. But since we have a camera fixed for the previous task, we implemented this functionality aslo from OpenCV. The code is much simpler and involves using two color masks for green and blue. Finally, the program counts the pixel area of green and blue seperately and outputs the color with the greater pixel area. The code for this task can be found in `./color_detection` folder.
