@@ -1,7 +1,8 @@
 # Machine Vision System for Line Follower Robot (Sri Lanka Robotics Challenge 2024)
 Computer Vision system for identifying 3D-objects and colors. Made for SLRC 2024. Powered by Tensorflow and OpenCV.
 
-[<img src="https://i.ytimg.com/an_webp/JsFgmXSXnWw/mqdefault_6s.webp?du=3000&sqp=CLC8vrAG&rs=AOn4CLDBAqtmarCRgDn4aXXI2aiYCGsVZg" width="50%">](https://youtu.be/JsFgmXSXnWw "SLRC Sparkle Robot")
+[![Watch the video](https://img.youtube.com/vi/JsFgmXSXnWw/maxresdefault.jpg)](https://www.youtube.com/watch?v=JsFgmXSXnWw)
+
 
 ## Object Detection
 One of the tasks of SLRC 2024 is for the robot to identify whether the object at the center of a ring is a cube or a cylinder. We tackled this task using computer vision. We experimented with the two approaches mentioned below. 
