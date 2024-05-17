@@ -66,7 +66,7 @@ def preprocess_img(img):
     return img
 
 # Load the trained model (MobilenetV1)
-model = load_model('/home/januka_pi/Documents/GitHub/SLRC-vision/model_final.h5')
+model = load_model('/home/januka_pi/Documents/Projects/SLRC-vision/model_final.h5')
 
 def detect_shape(frame):
     """
