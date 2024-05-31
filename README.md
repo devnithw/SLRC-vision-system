@@ -1,5 +1,14 @@
 # Machine Vision System for Line Follower Robot (Sri Lanka Robotics Challenge 2024)
+
+![Python](https://img.shields.io/badge/Python-3.9.2-blue)
+![opencv-contrib-python](https://img.shields.io/badge/opencv-contrib-orange)
+![RPi.GPIO](https://img.shields.io/badge/RPi.GPIO-0.7.1-yellow)
+![numpy](https://img.shields.io/badge/numpy-1.21.2-blue)
+![tensorflow](https://img.shields.io/badge/tensorflow-2.15.0-green)
+![keras](https://img.shields.io/badge/keras-2.15.0-green)
+
 Computer Vision system for identifying 3D-objects and colors. Made for SLRC 2024. Powered by Tensorflow and OpenCV.
+
 
 [![Watch the video](https://img.youtube.com/vi/JsFgmXSXnWw/maxresdefault.jpg)](https://www.youtube.com/watch?v=JsFgmXSXnWw)
 
@@ -46,13 +55,6 @@ This guide will help you set up your Raspberry Pi 4 Model B to run a project usi
 
 1. Raspberry Pi 4 Model B with Raspbian OS installed.
 2. Internet connection.
-
-![Python](https://img.shields.io/badge/Python-3.9.2-blue)
-![opencv-contrib-python](https://img.shields.io/badge/opencv-contrib-orange)
-![RPi.GPIO](https://img.shields.io/badge/RPi.GPIO-0.7.1-yellow)
-![numpy](https://img.shields.io/badge/numpy-1.21.2-blue)
-![tensorflow](https://img.shields.io/badge/tensorflow-2.15.0-green)
-![keras](https://img.shields.io/badge/keras-2.15.0-green)
 
 ## Step-by-Step Setup
 
