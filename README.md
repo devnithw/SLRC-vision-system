@@ -112,7 +112,7 @@ After=multi-user.target
 
 [Service]
 Type=idle
-ExecStart=/usr/bin/python3 /home/pi/Documents/main.py
+ExecStart=/usr/bin/python3 /home/pi/Documents/SLRC-vision-system/main.py
 
 [Install]
 WantedBy=multi-user.target
