@@ -163,3 +163,19 @@ sudo systemctl is-enabled main.service
 This command should return `enabled` if the service is set to start at boot.
 
 **With these steps, your Python script `main.py` will now automatically run whenever the Raspberry Pi boots up.**
+
+
+# About
+
+This project was developed for the `SLRC 2024- Sri Lankan Robotics Challenge`
+
+## Contributing
+
+Contributions are welcome! 
+
+- **Bug Fixes:** If you find any bugs or issues, feel free to create an issue or submit a pull request.
+- **Feature Enhancements:** If you have ideas for new features or improvements, don't hesitate to share them.
+
+# License
+
+This project is licensed under the [MIT License](LICENSE).
